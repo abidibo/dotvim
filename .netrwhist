@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/home/abidibo/.vim/configurations'
+let g:netrw_dirhist_2='/home/abidibo/.vim/configurations/default'
+let g:netrw_dirhist_3='/home/abidibo/.vim/plugged/completor.vim/autoload/completor'
