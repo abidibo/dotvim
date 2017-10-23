@@ -1,6 +1,3 @@
-source ~/.vim/configurations/code/plugins.vim
-
-" syntax
-Plug 'groenewege/vim-less', {'for': 'less'}
-Plug 'JulesWang/css.vim' " only necessary if your Vim version < 7.4
-Plug 'cakebaker/scss-syntax.vim'
+source ~/.vim/configurations/default/plugins.vim
+source ~/.vim/configurations/code/code-plugins.vim
+source ~/.vim/configurations/css/css-plugins.vim

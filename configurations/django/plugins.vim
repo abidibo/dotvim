@@ -1,10 +1,6 @@
-source ~/.vim/configurations/html/plugins.vim
-source ~/.vim/configurations/css/plugins.vim
-source ~/.vim/configurations/js/plugins.vim
-source ~/.vim/configurations/python/plugins.vim
-
-Plug 'jmcomets/vim-pony'
-
-Plug 'tweekmonster/django-plus.vim'
-
-let g:django_filetypes = ['*.html', '*.py']
+source ~/.vim/configurations/default/plugins.vim
+source ~/.vim/configurations/code/code-plugins.vim
+source ~/.vim/configurations/html/html-plugins.vim
+source ~/.vim/configurations/css/css-plugins.vim
+source ~/.vim/configurations/js/js-plugins.vim
+source ~/.vim/configurations/python/python-plugins.vim

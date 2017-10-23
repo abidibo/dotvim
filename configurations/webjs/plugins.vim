@@ -1,6 +1,6 @@
-source ~/.vim/configurations/html/plugins.vim
-source ~/.vim/configurations/css/plugins.vim
-source ~/.vim/configurations/js/plugins.vim
-
-Plug 'isRuslan/vim-es6'
-Plug 'moll/vim-node'
+source ~/.vim/configurations/default/plugins.vim
+source ~/.vim/configurations/code/code-plugins.vim
+source ~/.vim/configurations/html/html-plugins.vim
+source ~/.vim/configurations/css/css-plugins.vim
+source ~/.vim/configurations/js/js-plugins.vim
+source ~/.vim/configurations/webjs/webjs-plugins.vim

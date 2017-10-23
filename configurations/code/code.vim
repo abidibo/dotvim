@@ -48,3 +48,9 @@ set tw=500
 set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Operation mapping
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+:onoremap p i(
+:onoremap in( :<c-u>normal! f(vi(<cr>

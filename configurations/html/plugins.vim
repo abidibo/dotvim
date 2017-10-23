@@ -1,15 +1,3 @@
-source ~/.vim/configurations/code/plugins.vim
-
-" sparkup html parser
-Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
-
-" Mappings
-Plug 'tpope/vim-ragtag'
-
-" completion
-Plug 'jvanja/vim-bootstrap4-snippets'
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => ragtag
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:ragtag_global_maps=1
+source ~/.vim/configurations/default/plugins.vim
+source ~/.vim/configurations/code/code-plugins.vim
+source ~/.vim/configurations/html/html-plugins.vim
