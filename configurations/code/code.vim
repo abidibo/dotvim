@@ -25,6 +25,7 @@ set wildignore+=*DS_Store*
 set wildignore+=vendor/**
 set wildignore+=vendor/**
 set wildignore+=*.gem
+set wildignore+=*.png,*.jpg,*.gif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -54,3 +55,15 @@ set wrap "Wrap lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 :onoremap p i(
 :onoremap in( :<c-u>normal! f(vi(<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Folding
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set foldmethod=syntax
+set foldlevelstart=1
+
+let javaScript_fold=1         " JavaScript
+let php_folding=1             " PHP
+let sh_fold_enabled=1         " sh
+let vimsyn_folding='af'       " Vim script
+let xml_syntax_folding=1      " XML

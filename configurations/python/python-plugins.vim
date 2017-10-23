@@ -1,5 +1,5 @@
 Plug 'davidhalter/jedi-vim'
-
+Plug 'tmhedberg/SimpylFold'
 Plug 'python-rope/ropevim'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

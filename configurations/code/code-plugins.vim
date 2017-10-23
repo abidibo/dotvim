@@ -1,3 +1,6 @@
+" Indentation
+Plug 'Yggdroot/indentLine'
+
 " folding
 Plug 'Konfekt/FastFold'
 
@@ -48,6 +51,7 @@ Plug 'metakirby5/codi.vim'
 "inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 "inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 let g:completor_python_binary = '/usr/bin/python2.7'
+let g:completor_filetype_map = {'python.django': 'python'}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Supertab
