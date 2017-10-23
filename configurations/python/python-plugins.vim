@@ -1,3 +1,4 @@
+Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'davidhalter/jedi-vim'
 Plug 'tmhedberg/SimpylFold'
 Plug 'python-rope/ropevim'

@@ -27,8 +27,6 @@ Plug 'maralla/completor.vim'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'ervandew/supertab'
-Plug 'tomtom/tlib_vim'
-Plug 'MarcWeber/vim-addon-mw-utils'
 
 " Debug
 " python: https://github.com/gotcha/vimpdb

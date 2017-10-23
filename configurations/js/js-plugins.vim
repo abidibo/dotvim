@@ -1,11 +1,14 @@
 " jsdoc
 Plug 'heavenshell/vim-jsdoc'
 
-" syntax checking
+" autocompletion and tern stuff
 Plug 'ternjs/tern_for_vim'
 
 " js syntax
 Plug 'pangloss/vim-javascript', {'for': 'javascript'}
+
+" syntax and snippets
+Plug 'isRuslan/vim-es6'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-jsdoc

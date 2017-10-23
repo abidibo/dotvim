@@ -36,6 +36,9 @@ set autoread
 " Use awesome features
 set nocompatible " be iMproved
 
+" create missing dirs
+nnoremap <leader>md :!mkdir -p %:p:h<cr>
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin management with vim-plug
