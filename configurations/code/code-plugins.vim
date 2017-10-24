@@ -48,7 +48,9 @@ Plug 'metakirby5/codi.vim'
 " the below rules where commented out because of supertab
 "inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 "inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-let g:completor_python_binary = '/usr/bin/python2.7'
+" swith the following lines to autocomplete python 2/3
+" let g:completor_python_binary = '/usr/bin/python2.7'
+let g:completor_python_binary = '/usr/bin/python3'
 let g:completor_filetype_map = {'python.django': 'python'}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
