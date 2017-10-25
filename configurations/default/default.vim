@@ -25,7 +25,6 @@ let $VIMDIRPATH = '~/.vim'
 """"""""""""""""""""""""""""""
 let mapleader = ','
 
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -83,6 +82,9 @@ let g:netrw_ftp_cmd="ftp -p"
 " enable mouse
 set mouse=a
 
+" highlight cursor line
+set cursorline
+
 " show commands
 set showcmd
 
@@ -122,15 +124,20 @@ set magic
 
 " Show matching brackets when text indicator is over them
 set showmatch
+
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
 " No annoying sound on errors
-set noerrorbells
-set novisualbell
+"set noerrorbells
+"set novisualbell
 set noeb vb t_vb=
 set t_vb=
 set tm=500
+
+" remap resize split windows ctrls
+noremap <c-w><left> <c-w><
+noremap <c-w><right> <c-w>>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -190,6 +197,9 @@ map <leader>q :e ~/buffer<cr>
 
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
+
+" jk is escape
+inoremap jk <esc>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

@@ -22,6 +22,9 @@ Plug 'junegunn/fzf.vim'
 " paste
 Plug 'vim-scripts/YankRing.vim'
 
+" undo
+Plug 'sjl/gundo.vim'
+
 " substitution
 Plug 'tpope/vim-abolish'
 
@@ -74,3 +77,9 @@ imap <C-x><C-f> <plug>(fzf-complete-file-ag)
 " => YankRing
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <space>y :YRShow<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Gundo
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" toggle gundo
+nnoremap <leader>u :GundoToggle<CR>

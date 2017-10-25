@@ -50,7 +50,7 @@ Plug 'metakirby5/codi.vim'
 "inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " swith the following lines to autocomplete python 2/3
 " let g:completor_python_binary = '/usr/bin/python2.7'
-let g:completor_python_binary = '/usr/bin/python3'
+let g:completor_python_binary = '/usr/bin/python3.5'
 let g:completor_filetype_map = {'python.django': 'python'}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -90,13 +90,18 @@ let g:airline#extensions#ale#enabled = 1
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-let g:ale_fixers = {'javascript': ['prettier'], 'scss': ['stylelint'], 'python': ['yapf', 'isort']}
+let g:ale_fixers = {'javascript': ['prettier'], 'scss': ['prettier'], 'python': ['yapf', 'isort']}
+let g:ale_linters = {
+\   'scss': ['sasslint'],
+\}
 let g:ale_set_highlights = 1
 let g:ale_set_signs = 1
 let g:ale_sign_column_always = 1
 "let g:ale_sign_error = '✖'
 "let g:ale_sign_warning = '⚠'
-noremap <leader>f :ALEFix<cr>
+nnoremap <leader>f :ALEFix<cr>
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => semantic-highlight
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
