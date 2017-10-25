@@ -16,9 +16,6 @@ Plug 'tmhedberg/matchit'
 " surroundings
 Plug 'tpope/vim-surround'
 
-" align
-Plug 'junegunn/vim-easy-align'
-
 " syntax checking
 Plug 'w0rp/ale'
 
@@ -41,6 +38,9 @@ Plug 'majutsushi/tagbar'
 
 " scratchpad
 Plug 'metakirby5/codi.vim'
+
+" dev icons
+" Plug 'ryanoasis/vim-devicons'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Completor
@@ -76,14 +76,6 @@ endfunction
 inoremap <expr> <CR> pumvisible() ? "<C-R>=<SID>ExpandSnippetOrReturn()<CR>" : "\<CR>"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => EasyAlign
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ALE
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline#extensions#ale#enabled = 1
@@ -112,3 +104,8 @@ let g:semanticTermColors = [28,1,2,3,4,5,6,7,25,9,10,34,12,13,14,15,16,125,124,1
 " => tagbar
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nmap <F8> :TagbarToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-devicons
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set guifont=RobotoMono\ Nerd\ Font\ Mono\ 11

@@ -14,6 +14,9 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 
 " git
 Plug 'tpope/vim-fugitive'
+Plug 'gregsexton/gitv'
+Plug 'kablamo/vim-git-log'
+Plug 'jaxbot/github-issues.vim'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -38,6 +41,10 @@ Plug 'terryma/vim-multiple-cursors'
 " async
 Plug 'skywind3000/asyncrun.vim'
 
+" align
+Plug 'junegunn/vim-easy-align'
+
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-airline
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -46,9 +53,9 @@ Plug 'skywind3000/asyncrun.vim'
 "set t_Co=256
 "let g:airline_powerline_fonts=1
 "let g:airline_theme='wombat'
+let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'wombat'
-let g:airline#extensions#whitespace#enabled = 1
 let g:airline#extensions#default#layout = [
       \ [ 'a', 'b', 'c' ],
       \ [ 'x', 'y', 'z', 'error', 'warning' ]
@@ -58,6 +65,7 @@ let g:airline#extensions#default#layout = [
 " => nerdtree
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <C-f> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$']
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => fzf
@@ -83,3 +91,11 @@ map <space>y :YRShow<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => EasyAlign
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
