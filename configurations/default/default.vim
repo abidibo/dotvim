@@ -38,6 +38,21 @@ set nocompatible " be iMproved
 " create missing dirs
 nnoremap <leader>md :!mkdir -p %:p:h<cr>
 
+" good habits
+" Disable Arrow keys in Escape mode
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+" Disable Arrow keys in Insert mode
+imap <up> <nop>
+imap <down> <nop>
+imap <left> <nop>
+imap <right> <nop>
+
+" jk is escape
+inoremap jk <esc>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Plugin management with vim-plug
@@ -81,12 +96,14 @@ let g:netrw_ftp_cmd="ftp -p"
 
 " enable mouse
 set mouse=a
+set ttymouse=sgr
 
 " highlight cursor line
 set cursorline
 
 " show commands
-set showcmd
+" set showcmd
+set noshowmode
 
 " GUI Font
 set guifont=Source\ Code\ Pro\ for\ Powerline\ Light\ 10
@@ -198,8 +215,11 @@ map <leader>q :e ~/buffer<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 
-" jk is escape
-inoremap jk <esc>
+" split
+nnoremap <space>h <c-w>h
+nnoremap <space>l <c-w>l
+nnoremap <space>j <c-w>j
+nnoremap <space>k <c-w>k
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

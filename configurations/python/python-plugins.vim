@@ -10,6 +10,7 @@ Plug 'python-rope/ropevim'
 let g:jedi#use_splits_not_buffers = "right"
 let g:jedi#popup_on_dot = 0
 let g:jedi#completions_enabled = 1
+let g:jedi#show_call_signatures = "2"
 autocmd FileType python setlocal omnifunc=jedi#completions
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -22,3 +23,5 @@ nnoremap <leader>rag :call RopeGenerateAutoimportCache()<CR>
 nnoremap <leader>ra :call RopeAutoImport()<CR>
 inoremap <c-c>rca <esc>:call RopeCodeAssist()<CR>
 nnoremap <leader>rop :call RopeOpenProject()<CR>
+nnoremap <leader>rr :call RopeRename()<CR>
+nnoremap <leader>rf :call RopeFindOccurrences()<CR>

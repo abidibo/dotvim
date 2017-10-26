@@ -71,6 +71,7 @@ let NERDTreeIgnore = ['\.pyc$']
 " => fzf
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:fzf_launcher='gnome-terminal --disable-factory -x bash -ic %s'
+let $FZF_DEFAULT_COMMAND = 'ag -l'
 let g:fzf_height='40%'
 map <space>f :Files<CR>
 map <space>b :Buffers<CR>

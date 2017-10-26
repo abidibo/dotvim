@@ -62,6 +62,9 @@ set wrap "Wrap lines
 set foldmethod=syntax
 set foldlevelstart=1
 
+" expanded when opening a file
+au BufRead * normal zR
+
 let javaScript_fold=1         " JavaScript
 let php_folding=1             " PHP
 let sh_fold_enabled=1         " sh

@@ -40,7 +40,7 @@ Plug 'majutsushi/tagbar'
 Plug 'metakirby5/codi.vim'
 
 " dev icons
-" Plug 'ryanoasis/vim-devicons'
+Plug 'ryanoasis/vim-devicons'
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Completor
@@ -61,8 +61,8 @@ let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Utilsnip
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<S-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsExpandTrigger="<nop>"
 let g:ulti_expand_or_jump_res = 0
 function! <SID>ExpandSnippetOrReturn()
