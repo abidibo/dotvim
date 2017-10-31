@@ -55,6 +55,8 @@ set wrap "Wrap lines
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 :onoremap p i(
 :onoremap in( :<c-u>normal! f(vi(<cr>
+:onoremap in' :<c-u>normal! f'vi'<cr>
+:onoremap in" :<c-u>normal! f"vi"<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Folding

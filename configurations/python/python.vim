@@ -1,4 +1,4 @@
-noremap <leader>b Oimport ipdb; ipdb.set_trace() # BREAKPOINT<esc>
+noremap <leader>b Oimport pdb; pdb.set_trace() # BREAKPOINT<esc>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Folding

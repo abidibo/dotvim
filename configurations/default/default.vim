@@ -221,6 +221,10 @@ nnoremap <space>l <c-w>l
 nnoremap <space>j <c-w>j
 nnoremap <space>k <c-w>k
 
+" up/down
+nnoremap ò <c-d>
+nnoremap à <c-u>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
