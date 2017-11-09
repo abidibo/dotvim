@@ -5,7 +5,8 @@ Plug 'heavenshell/vim-jsdoc'
 Plug 'ternjs/tern_for_vim'
 
 " js syntax
-Plug 'pangloss/vim-javascript', {'for': 'javascript'}
+Plug 'pangloss/vim-javascript', {'for': 'javascript,javascript.jsx'}
+" Plug 'jelera/vim-javascript-syntax',  {'for': 'javascript.jsx'}
 
 " syntax and snippets
 Plug 'isRuslan/vim-es6'

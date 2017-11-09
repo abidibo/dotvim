@@ -40,16 +40,16 @@ nnoremap <leader>md :!mkdir -p %:p:h<cr>
 
 " good habits
 " Disable Arrow keys in Escape mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+" map <up> <nop>
+" map <down> <nop>
+" map <left> <nop>
+" map <right> <nop>
 
-" Disable Arrow keys in Insert mode
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
-imap <right> <nop>
+" " Disable Arrow keys in Insert mode
+" imap <up> <nop>
+" imap <down> <nop>
+" imap <left> <nop>
+" imap <right> <nop>
 
 " jk is escape
 inoremap jk <esc>
@@ -156,6 +156,10 @@ set tm=500
 noremap <c-w><left> <c-w><
 noremap <c-w><right> <c-w>>
 
+" buffer move
+nnoremap <leader>bl :bnext<cr>
+nnoremap <leader>bh :bprev<cr>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -220,10 +224,6 @@ nnoremap <space>h <c-w>h
 nnoremap <space>l <c-w>l
 nnoremap <space>j <c-w>j
 nnoremap <space>k <c-w>k
-
-" up/down
-nnoremap ò <c-d>
-nnoremap à <c-u>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions

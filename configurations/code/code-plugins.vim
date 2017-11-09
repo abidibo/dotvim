@@ -81,16 +81,26 @@ inoremap <expr> <CR> pumvisible() ? "<C-R>=<SID>ExpandSnippetOrReturn()<CR>" : "
 let g:airline#extensions#ale#enabled = 1
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
+let g:ale_javascript_flow_use_global = 1
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
-let g:ale_fixers = {'javascript': ['prettier'], 'scss': ['prettier'], 'python': ['yapf', 'isort']}
+" Prettier does not have spaceBeforeFunctionParen option => fix with eslint after
+" https://github.com/prettier/prettier/issues/1139
+let g:ale_fixers = {'javascript': ['prettier', 'eslint'], 'scss': ['prettier'], 'python': ['yapf', 'isort']}
+" create a .prettierrc file in the project root
+" {
+"   'semi':false,
+"   'singleQuote':true,
+"   'bracketSpacing':true
+" }
+let g:ale_javascript_prettier_use_local_config = 1
 let g:ale_linters = {
 \   'scss': ['sasslint'],
 \}
 let g:ale_set_highlights = 1
 let g:ale_set_signs = 1
 let g:ale_sign_column_always = 1
-"let g:ale_sign_error = '✖'
-"let g:ale_sign_warning = '⚠'
+" let g:ale_sign_error = '✖'
+" let g:ale_sign_warning = '⚠'
 nnoremap <leader>f :ALEFix<cr>
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)

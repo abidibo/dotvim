@@ -15,6 +15,9 @@ autocmd FileType python setlocal omnifunc=jedi#completions
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ropevim
+" N.B, In order to have autoimport for venv modules working, add this line to the
+" .ropeproject/config.py:
+" prefs.add('python_path', '../.virtualenv/lib/python2.7/site-packages')
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:ropevim_autoimport_modules = ["os", "shutil", "datetime", "json", "re", "django.*", "ckeditor_uploader.*", "ckeditor.*", "captcha.*", "constance.*", "easy_thumbnails.*", "widget_tweaks.*"]
 let g:ropevim_goto_def_newwin = 'tabnew'
