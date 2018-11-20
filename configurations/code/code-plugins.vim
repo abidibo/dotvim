@@ -1,3 +1,9 @@
+" FPT
+Plug 'vim-scripts/netrw.vim'
+
+" TODO
+Plug 'Dimercel/todo-vim'
+
 " Indentation
 Plug 'Yggdroot/indentLine'
 
@@ -59,6 +65,16 @@ let g:completor_filetype_map = {'python.django': 'python'}
 let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Surround
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap ss ysiw
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => TODO
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap <leader>todo :TODOToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Utilsnip
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
@@ -99,6 +115,8 @@ let g:ale_linters = {
 let g:ale_set_highlights = 1
 let g:ale_set_signs = 1
 let g:ale_sign_column_always = 1
+"let g:ale_echo_cursor = 0 " vim bug which hides cursor when error il displayed
+
 " let g:ale_sign_error = '✖'
 " let g:ale_sign_warning = '⚠'
 nnoremap <leader>f :ALEFix<cr>
@@ -118,4 +136,4 @@ nmap <F8> :TagbarToggle<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-devicons
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set guifont=RobotoMono\ Nerd\ Font\ Mono\ 11
+set guifont=RobotoMono\ Nerd\ Font\ Mono

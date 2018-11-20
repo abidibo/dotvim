@@ -11,6 +11,9 @@ autocmd FileType css,scss setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType javascript setlocal omnifunc=tern#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+au BufRead,BufNewFile *.qss set filetype=css
+
+inoremap <C-@> <c-x><c-o>
 
 " set line numbers
 set number

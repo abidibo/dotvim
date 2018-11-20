@@ -106,7 +106,7 @@ set cursorline
 set noshowmode
 
 " GUI Font
-set guifont=Source\ Code\ Pro\ for\ Powerline\ Light\ 10
+" set guifont=Source\ Code\ Pro\ for\ Powerline\ Light\ 10
 
 " Set 7 lines to the cursor - when moving vertically using j/k
 set so=7
