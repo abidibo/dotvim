@@ -1,6 +1,7 @@
 Plug 'Vimjas/vim-python-pep8-indent'
 Plug 'davidhalter/jedi-vim'
 Plug 'tmhedberg/SimpylFold'
+Plug 'mgedmin/python-imports.vim'
 "Plug 'python-rope/ropevim'
 " Plug 'python-mode/python-mode', { 'branch': 'develop' }
 
@@ -12,7 +13,7 @@ let g:jedi#use_splits_not_buffers = "right"
 let g:jedi#popup_on_dot = 0
 let g:jedi#completions_enabled = 1
 let g:jedi#show_call_signatures = "2"
-" autocmd FileType python setlocal omnifunc=jedi#completions
+autocmd FileType python setlocal omnifunc=jedi#completions
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ropevim

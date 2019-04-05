@@ -100,3 +100,23 @@ nnoremap <leader>u :GundoToggle<CR>
 xmap ga <Plug>(EasyAlign)
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Fugitive
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" fugitive git bindings
+nnoremap <leader><leader>ga :Git add %:p<CR><CR>
+nnoremap <leader><leader>gs :Gstatus<CR>
+nnoremap <leader><leader>gc :Gcommit -v -q<CR>
+nnoremap <leader><leader>gt :Gcommit -v -q %:p<CR>
+nnoremap <leader><leader>gd :Gdiff<CR>
+nnoremap <leader><leader>ge :Gedit<CR>
+nnoremap <leader><leader>gr :Gread<CR>
+nnoremap <leader><leader>gw :Gwrite<CR><CR>
+nnoremap <leader><leader>gl :silent! Glog<CR>:bot copen<CR>
+nnoremap <leader><leader>gp :Ggrep<Space>
+nnoremap <leader><leader>gm :Gmove<Space>
+nnoremap <leader><leader>gb :Git branch<Space>
+nnoremap <leader><leader>go :Git checkout<Space>
+nnoremap <leader><leader>gps :Dispatch! git push<CR>
+nnoremap <leader><leader>gpl :Dispatch! git pull<CR>

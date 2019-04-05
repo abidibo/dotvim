@@ -36,9 +36,6 @@ Plug 'ervandew/supertab'
 " php and more
 Plug 'joonty/vdebug'
 
-" semantic highlight
-Plug 'jaxbot/semantic-highlight.vim'
-
 " tagbar
 Plug 'majutsushi/tagbar'
 
@@ -48,6 +45,12 @@ Plug 'metakirby5/codi.vim'
 " dev icons
 Plug 'ryanoasis/vim-devicons'
 
+" slimux
+Plug 'epeli/slimux'
+
+" gutentags
+Plug 'ludovicchabant/vim-gutentags'
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Completor
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -56,7 +59,7 @@ Plug 'ryanoasis/vim-devicons'
 "inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " swith the following lines to autocomplete python 2/3
 " let g:completor_python_binary = '/usr/bin/python2.7'
-let g:completor_python_binary = '/usr/bin/python3.5'
+let g:completor_python_binary = '/usr/bin/python3.6'
 let g:completor_filetype_map = {'python.django': 'python'}
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -122,11 +125,6 @@ let g:ale_sign_column_always = 1
 nnoremap <leader>f :ALEFix<cr>
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => semantic-highlight
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-:nnoremap <Leader>s :SemanticHighlightToggle<cr>
-let g:semanticTermColors = [28,1,2,3,4,5,6,7,25,9,10,34,12,13,14,15,16,125,124,19]
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => tagbar
@@ -137,3 +135,14 @@ nmap <F8> :TagbarToggle<CR>
 " => vim-devicons
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set guifont=RobotoMono\ Nerd\ Font\ Mono
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => slimux
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <Leader>s :SlimuxREPLSendLine<CR>
+vmap <Leader>s :SlimuxREPLSendSelection<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => gutentags
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set statusline+=%{gutentags#statusline()}
