@@ -16,7 +16,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv'
 Plug 'kablamo/vim-git-log'
-Plug 'jaxbot/github-issues.vim'
+" Plug 'jaxbot/github-issues.vim'
 
 " fuzzy finder
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -108,6 +108,7 @@ nmap ga <Plug>(EasyAlign)
 nnoremap <leader><leader>ga :Git add %:p<CR><CR>
 nnoremap <leader><leader>gs :Gstatus<CR>
 nnoremap <leader><leader>gc :Gcommit -v -q<CR>
+nnoremap <leader><leader>gcf :Gcommit %<CR>
 nnoremap <leader><leader>gt :Gcommit -v -q %:p<CR>
 nnoremap <leader><leader>gd :Gdiff<CR>
 nnoremap <leader><leader>ge :Gedit<CR>

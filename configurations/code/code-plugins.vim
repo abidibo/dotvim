@@ -2,7 +2,7 @@
 Plug 'vim-scripts/netrw.vim'
 
 " TODO
-Plug 'Dimercel/todo-vim'
+Plug 'vim-scripts/TaskList.vim'
 
 " Indentation
 Plug 'Yggdroot/indentLine'
@@ -58,9 +58,11 @@ Plug 'ludovicchabant/vim-gutentags'
 "inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 "inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
 " swith the following lines to autocomplete python 2/3
-" let g:completor_python_binary = '/usr/bin/python2.7'
-let g:completor_python_binary = '/usr/bin/python3.6'
+" let g:completor_python_binary = '/usr/bin/python2.7' " kite
+let g:completor_python_binary = '/usr/bin/python3.6' " kite
 let g:completor_filetype_map = {'python.django': 'python'}
+" let g:kite_auto_complete=1
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Supertab
@@ -104,7 +106,7 @@ let g:ale_javascript_flow_use_global = 1
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 " Prettier does not have spaceBeforeFunctionParen option => fix with eslint after
 " https://github.com/prettier/prettier/issues/1139
-let g:ale_fixers = {'javascript': ['prettier', 'eslint'], 'scss': ['prettier'], 'python': ['yapf', 'isort']}
+let g:ale_fixers = {'javascript': ['prettier', 'eslint'], 'scss': ['prettier'], 'python': ['yapf', 'isort'], 'html': ['tidy']}
 " create a .prettierrc file in the project root
 " {
 "   'semi':false,
